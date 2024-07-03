@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			display: flex;
+			background-color: rgb(193, 223, 248);
+			justify-content: center;
+			align-items: center;
+			height: 600px;
+			margin: 0;
+		}
+		.container{
+			background-color: rgb(249, 191, 164);
+			width: 400px;
+			height: 300px;
+			border: solid black;
+			padding: 3%;
+			border-radius: 10px;
+		}
+		.display{
+			background-color: rgb(4, 102, 69);
+			width: 380px;
+			height: 60px;
+			margin-left: 2%;
+			font-size: 60px;
+			border: solid;
+			color: black;
+			display: flex;
+			justify-content: right;
+			border-radius: 5px;
+			border-width: 2px;
+			margin-top: 10px;
+		}
+		.buttons{
+			display: grid;
+			grid-template-rows: repeat(4,1fr);
+			grid-template-columns: repeat(4,1fr);
+			width: 350px;
+			height:200px;
+			row-gap :20px;
+			column-gap: 20px;
+			padding: 20px;
+			
+		}
+		input{
+			border: solid;
+			border-radius: 16px;
+			border-width: 2px;
+			background-color: rgb(255, 255, 255);
+		}
+		.operator{
+			background-color: rgb(155, 255, 127);
+			border-width: 4px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class ="display">0
+		</div>
+		<div>
+
+		</div>
+		<div class="buttons">
+			<input type="button" value="7">
+			<input type="button" value="8">
+			<input type="button" value="9">
+			<input type="button" class="operator" value="*">
+			<input type="button" value="4">
+			<input type="button" value="5">
+			<input type="button" value="6">
+			<input type="button" class="operator" value="/">
+			<input type="button" value="1">
+			<input type="button" value="2">
+			<input type="button" value="3">
+			<input type="button" class="operator" value="+">
+			<input type="button" value="=" style="background-color: rgb(104, 175, 241);">
+			<input type="button" value="0">
+			<input type="button" value=".">
+			<input type="button" class="operator" value="-">
+		</div>
+	</div>
+</body>
+</html>
